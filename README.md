@@ -9,6 +9,7 @@ For bug reports, please email *Aldre Jota* at aldrejota[at]gmail.com.
 ## Neural Network Model
 
 Download trained model [here](http://www.lipsum.com/).
+
 ![Training and Validation Accuracy Plot](https://github.com/aldrejota/base-station-classifier/blob/master/notebooks/figures/accuracy.png)
 
 The architecture of the neural network is similar to the **base layers of VGG16\* (Simonyan & Zisserman, 2014) topped with a single 256-node fully-connected layer regularized with 50% dropout**.
