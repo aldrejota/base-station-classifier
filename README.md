@@ -11,8 +11,7 @@ For questions and bug reports, please email *Aldre Jota* at aldrejota[at]gmail.c
 
 ## Neural Network Model
 
-Accuracy on Hold-out Sample: **96.57%**
-Area Under the ROC Curve: **99.66%**
+Accuracy on Hold-out Sample (Test Set): **96.57%**
 
 ![Training and Validation Accuracy Plot](https://github.com/aldrejota/base-station-classifier/blob/master/notebooks/figures/accuracy.png)
 
