@@ -1,20 +1,26 @@
 # Detecting Base Transceiver Stations on Satellite Images using Deep Convolutional Neural Networks
 
-The goal of this study is to verify locations of base transceiver stations (BTS) in a particular region by utilizing a deep neural network with which to classify geo-referenced image tiles for presence or non-presence of BTS.
+**Goal:** This study is to verify locations of base transceiver stations (BTS) in a particular region by utilizing a deep neural network with which to classify geo-referenced image tiles for presence or non-presence of BTS.
 
-This codebase (in Python 3.6) allows the reader to replicate the results of this study.
+This code base allows the reader to replicate the results of this study.
 
-For bug reports, please email *Aldre Jota* at aldrejota[at]gmail.com.
+**Programming Language:** Python 3.6 (can be modified for Python 2.x)
+**Required Packages:** Pillow, overpass, numpy, scipy
+
+For questions and bug reports, please email *Aldre Jota* at aldrejota[at]gmail.com.
 
 ## Neural Network Model
 
-Download trained model [here](http://www.lipsum.com/).
+Accuracy on Hold-out Sample: **96.57%**
+Area Under the ROC Curve: **99.66%**
 
 ![Training and Validation Accuracy Plot](https://github.com/aldrejota/base-station-classifier/blob/master/notebooks/figures/accuracy.png)
 
 The architecture of the neural network is similar to the **base layers of VGG16\* (Simonyan & Zisserman, 2014) topped with a single 256-node fully-connected layer regularized with 50% dropout**.
 
 Optimized using stochastic gradient descent with 0.0001 learning rate and 0.9 momentum.
+
+You can access the trained model [here](https://drive.google.com/open?id=0B_HWTa5-BxkEY2ZmenM3czlWa28).
 
 \*Simonyan & Zisserman, 2014, Very Deep Convolutional Networks for Large-Scale Image Recognition [[Arxiv]](https://arxiv.org/abs/1409.1556)
 
@@ -39,3 +45,4 @@ Optimized using stochastic gradient descent with 0.0001 learning rate and 0.9 mo
 json_model = open('keras_model.json', 'r').read()
 BTS_model = model_from_json(json_model)
 ```
+3. "Transfer learning" approach: use the pretrained model of the original VGG16 for the initial weight of the base layers.
