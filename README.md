@@ -1,10 +1,11 @@
 # Detecting Base Transceiver Stations on Satellite Images using Deep Convolutional Neural Networks
 
-**Goal:** This study is to verify locations of base transceiver stations (BTS) in a particular region by utilizing a deep neural network with which to classify geo-referenced image tiles for presence or non-presence of BTS.
+**Goal:** The objective of this study is to verify locations of base transceiver stations (BTS) in a particular region by utilizing a deep neural network with which to classify geo-referenced image tiles for presence or non-presence of BTS.
 
 This code base allows the reader to replicate the results of this study.
 
 **Programming Language:** Python 3.6 (can be modified for Python 2.x)
+
 **Required Packages:** Pillow, overpass, numpy, scipy
 
 For questions and bug reports, please email *Aldre Jota* at aldrejota[at]gmail.com.
